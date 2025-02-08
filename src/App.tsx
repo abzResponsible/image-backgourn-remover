@@ -260,15 +260,20 @@ export default function App() {
                   </>
                 ) : (
                   <>
-                    <svg className="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                    </svg>
-                    <p className="text-lg text-gray-600">
+                    <button className="bg-zinc-900 px-6 py-3 rounded-lg mb-2 flex items-center gap-2">
+                      <span className="p-1 bg-zinc-700 rounded-full inline-block">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="10" y="0" width="4" height="24" fill="white" />
+                          <rect x="0" y="10" width="24" height="4" fill="white" />
+                        </svg>
+                      </span>
+                      <p className="text-white font-medium">Upload Image</p>
+                    </button>
+                    <p className="text-base text-gray-600">
                       {isDragActive
                         ? "Drop the images here..."
                         : "Drag and drop images here"}
                     </p>
-                    <p className="text-sm text-gray-500">or click to select files</p>
                   </>
                 )}
               </div>
