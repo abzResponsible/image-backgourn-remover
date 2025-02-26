@@ -39,6 +39,25 @@ Both implementations use Transformers.js to run the machine learning models dire
 
 ## Getting Started
 
+### Self-Hosting Guide
+
+1. Clone the repository:
+```bash
+git clone https://github.com/addyosmani/bg-remove.git
+cd bg-remove
+docker compose up -d --build
+```
+2. Access the app:
+```bash
+http://localhost:5173
+```
+
+## Basic Commands
+- Start: `docker compose up -d`
+- Stop: `docker compose down`
+- View logs: `docker compose logs -f`
+
+### Development Build
 1. Clone the repository:
 ```bash
 git clone https://github.com/addyosmani/bg-remove.git
