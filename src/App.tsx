@@ -165,7 +165,7 @@ export default function App() {
   // Remove the full screen error and loading states
 
   return (
-    <div className="min-h-screen bg-blue-50" onPaste={handlePaste}>
+    <div className="min-h-screen bg-gray-50" onPaste={handlePaste}>
       <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
